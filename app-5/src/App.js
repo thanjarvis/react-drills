@@ -1,18 +1,22 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import ImageComponent from "./Component/ImageComponent";
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+
+    }
+  }
+
+
+
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div >
+        <ImageComponent image={'https://miro.medium.com/max/1000/1*lh3KnrDElUK9jV-lMs4bIg.jpeg'}/>
       </div>
     );
   }
