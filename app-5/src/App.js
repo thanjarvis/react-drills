@@ -1,22 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
-import ImageComponent from "./Component/ImageComponent";
+import Hooks from './Component/Hooks'
 
 class App extends Component {
-  constructor(){
-    super()
-    this.state = {
-
-    }
-  }
-
-
-
-
+  
   render() {
     return (
       <div >
-        <ImageComponent image={'https://miro.medium.com/max/1000/1*lh3KnrDElUK9jV-lMs4bIg.jpeg'}/>
+        <Hooks
+          img={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUW94hai4ci_0xBNwZU6wodVhZbWRtuNWSd2nuvhGYmIsckEqwtQ`}
+        />
       </div>
     );
   }
